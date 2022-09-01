@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "ee4ef9a1-8b75-45e2-bf91-f3ec967cd0d6",
+		"name": "Custom Queries 02 exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21617836"
+	},
+	"item": [
+		{
+			"name": "Provisioning null param",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/flights/provisioning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights",
+						"provisioning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Provisioning",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/flights/provisioning?n=49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights",
+						"provisioning"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "49"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFlights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/flights/getAllFlights?pag=0&size=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights",
+						"getAllFlights"
+					],
+					"query": [
+						{
+							"key": "pag",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFlightsByStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/flights/getFlightsByStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights",
+						"getFlightsByStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomFlight 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/flights/getCustomFlight?p1=ON_TIME&p2=DELAYED",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights",
+						"getCustomFlight"
+					],
+					"query": [
+						{
+							"key": "p1",
+							"value": "ON_TIME"
+						},
+						{
+							"key": "p2",
+							"value": "DELAYED"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomFlight 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/flights/getCustomFlight?p1=ON_TIME&p2=DELAYED",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights",
+						"getCustomFlight"
+					],
+					"query": [
+						{
+							"key": "p1",
+							"value": "ON_TIME"
+						},
+						{
+							"key": "p2",
+							"value": "DELAYED"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
